@@ -3,7 +3,7 @@ import { Job } from "../../components/Job";
 export function ProfileType() {
     return (
       <div>
-        <div className="px-20 py-5 mb-4">
+        <div className="sm:px-20 px-5 py-5 mb-4 w-full">
           <h1 className="text-xl font-black mb-4">
             (H2) Les types de <span className="text-orange-500">profils</span>
           </h1>
@@ -27,7 +27,7 @@ export function ProfileType() {
             <Chip idx={8} title="Salesforce" />
           </div>
 
-          <div className="flex-1 h-fixed flex gap-10 items-start">
+          <div className="flex-1 sm:flex-row flex-col h-fixed flex gap-10 items-start">
             <Job
               title="Consultant Supply Chain"
               role="Expert - PMO - Manager"
@@ -72,13 +72,13 @@ export function ProfileType() {
   
 function Chip(props: ChipProps) {
   const colors = [
-    "from-blue-300 to-cyan-300",
-    "from-blue-400 to-cyan-400",
-    "from-orange-300 to-yellow-300",
-    "from-purple-300 to-pink-300",
-    "from-blue-200 to-cyan-200",
+    "from-blue-400 to-cyan-400 sm:w-48 w-36", // Supply chain
+    "from-blue-300 to-cyan-200 sm:w-52 w-28", // Distribution
+    "from-purple-400 to-violet-400 pr-5", // SAP
+    "from-orange-300 to-yellow-300 sm:w-28 w-24", // SAP MM
+    "from-violet-300 to-cyan-300 sm:w-52 w-28", // SAP S/4HANA
   ];
-  const color = colors[(props.idx + 1) % colors.length];
+  const color = colors[(props.idx - 1) % colors.length];
 
   return (
     <div className="">
@@ -87,7 +87,6 @@ function Chip(props: ChipProps) {
           hover:translate-x-8 inline-block duration-300 transform cursor-pointer
           rounded-lg bg-gradient-to-r px-4 font-black py-2 text-xs text-white ${color}
         `}
-        style={{ width: `${props.title.length * 1.1}rem` }}
       >
         {props.title}
       </span>
