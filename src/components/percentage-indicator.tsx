@@ -26,7 +26,7 @@ export function PercentageIndicator(props: Props) {
           <motion.circle
             cx="60" cy="60" r={radius}
             fill="transparent"
-            stroke="#0ea5e9"
+            stroke="#06b6d4"
             strokeWidth="12"
             transform="rotate(-90 60 60)"
             onMouseEnter={() => setPercentageValue(props.percentage)}
@@ -43,23 +43,30 @@ export function PercentageIndicator(props: Props) {
           />
         </svg>
           <div className="text-center -translate-y-[7rem]">
-            <span className={`text-4xl font-bold ${percentageValue === props.percentage ? "text-sky-500" : "text-violet-500"}`}>
+            <span className={`text-4xl font-semibold ${percentageValue === props.percentage ? "text-cyan-500" : "text-violet-500"}`}>
               {percentageValue}%
             </span>
           </div>
       </div>
       <div className="flex flex-col gap-2 pt-8 w-[34rem]">
         <motion.p
-          className={`font-bold text-2xl ${percentageValue === props.percentage ? "text-sky-500" : "text-violet-500"}`}
+          className={`font-semibold text-2xl ${percentageValue === props.percentage ? "text-cyan-500" : "text-violet-500"}`}
         >
           {(percentageValue == props.percentage) ? props.text1 : props.text2}
         </motion.p>
         <div className="flex gap-3 text-orange-400">
-          <Star className="h-8 w-8 fill-current" />
-          <Star className="h-8 w-8 fill-current" />
-          <Star className="h-8 w-8 fill-current" />
-          <Star className="h-8 w-8 fill-current" />
-          <StarHalf className="h-8 w-8 fill-current" />
+          <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
+          <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
+          <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
+          <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
+            <span className="flex">
+            <StarHalf strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
+            <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 -translate-x-8"
+              style={{ maskImage: "linear-gradient(to left, black 50%, transparent 50%)",
+              WebkitMaskImage: "linear-gradient(to left, black 50%, transparent 50%)"
+              }}
+            />
+            </span>
         </div>
       </div>
     </div>
