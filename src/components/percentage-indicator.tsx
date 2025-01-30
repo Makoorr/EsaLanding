@@ -38,7 +38,7 @@ export function PercentageIndicator(props: Props) {
             cx="60" cy="60" r={radius}
             stroke="#ffffff"
             strokeWidth="12"
-            strokeDasharray="1 2"
+            strokeDasharray="1 3"
             fill="none"
           />
         </svg>
@@ -55,17 +55,17 @@ export function PercentageIndicator(props: Props) {
           {(percentageValue == props.percentage) ? props.text1 : props.text2}
         </motion.p>
         <div className="flex gap-3 text-orange-400">
-          <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
-          <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
-          <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
-          <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
+          <Star strokeWidth="1" stroke="#fb923c" className="h-12 w-12 fill-current" />
+          <Star strokeWidth="1" stroke="#fb923c" className="h-12 w-12 fill-current" />
+          <Star strokeWidth="1" stroke="#fb923c" className="h-12 w-12 fill-current" />
+          <Star strokeWidth="1" stroke="#fb923c" className="h-12 w-12 fill-current" />
             <span className="flex">
-            <StarHalf strokeWidth="1" stroke="#fb923c" className="h-8 w-8 fill-current" />
-            <Star strokeWidth="1" stroke="#fb923c" className="h-8 w-8 -translate-x-8"
-              style={{ maskImage: "linear-gradient(to left, black 50%, transparent 50%)",
-              WebkitMaskImage: "linear-gradient(to left, black 50%, transparent 50%)"
-              }}
-            />
+              <StarHalf strokeWidth="1" stroke="#fb923c" className="h-12 w-12 fill-current" />
+              <Star strokeWidth="1" stroke="#fb923c" className="h-12 w-12 -translate-x-12"
+                style={{ maskImage: "linear-gradient(to left, black 50%, transparent 50%)",
+                WebkitMaskImage: "linear-gradient(to left, black 50%, transparent 50%)"
+                }}
+              />
             </span>
         </div>
       </div>
