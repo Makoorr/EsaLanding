@@ -16,7 +16,7 @@ export function Immatriculation() {
                         alt="ISO27001 certification SecNumCloud"
                         className="w-full h-full object-cover -translate-y-[0.15rem] scale-110"
                         style={{
-                            clipPath: "polygon(0 0, 100% 0, 100% 62%, 65% 94%, 58% 96%, 50% 97%, 45% 96%, 38% 95%, 34% 93%, 0 63%"
+                            clipPath: "polygon(0 0, 100% 0, 100% 62%, 65.5% 93.5%, 58% 95.5%, 50% 96.5%, 48% 96.5%, 42% 95.5%, 35% 93.8%, 0 63%"
                         }}
                     />
                 </div>
