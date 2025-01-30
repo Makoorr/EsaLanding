@@ -3,7 +3,7 @@ import { Job } from "../../components/Job";
 export function ProfileType() {
     return (
       <div>
-        <div className="px-20 py-5">
+        <div className="px-20 py-5 mb-4">
           <h1 className="text-xl font-black mb-4">
             (H2) Les types de <span className="text-orange-500">profils</span>
           </h1>
@@ -15,8 +15,8 @@ export function ProfileType() {
             aliqua.
           </h2>
         </div>
-        <div className="flex">
-          <div className="flex flex-col [&>*]:cursor-pointer space-y-3 w-72 pr-6">
+        <div className="flex py-4">
+          <div className="flex flex-col space-y-3 w-1/3 pr-6">
             <Chip idx={1} title="Supply Chain" />
             <Chip idx={2} title="Distribution" />
             <Chip idx={3} title="SAP" />
@@ -84,9 +84,10 @@ function Chip(props: ChipProps) {
     <div className="">
       <span
         className={`
-          hover:translate-x-8 inline-block duration-300 transform
+          hover:translate-x-8 inline-block duration-300 transform cursor-pointer
           rounded-lg bg-gradient-to-r px-4 font-black py-2 text-xs text-white ${color}
-          `}
+        `}
+        style={{ width: `${props.title.length * 1.1}rem` }}
       >
         {props.title}
       </span>
