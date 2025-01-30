@@ -16,7 +16,7 @@ export function ProfileType() {
           </h2>
         </div>
         <div className="flex py-4">
-          <div className="flex flex-col space-y-3 w-1/3 pr-6">
+          <div className="flex flex-col space-y-3 w-1/4 pr-6">
             <Chip idx={1} title="Supply Chain" />
             <Chip idx={2} title="Distribution" />
             <Chip idx={3} title="SAP" />
