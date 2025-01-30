@@ -1,9 +1,10 @@
 export function Certifications() {
     return (
-        <div className="relative pt-16">
-            <div className="px-40">
-                <div className="rounded-lg bg-gradient-to-r from-cyan-400 via-orange-600 to-blue-600 p-2 shadow-lg">
-                    <div className="bg-white flex justify-center py-28 pb-52">
+        <div className="relative py-16">
+            <div className="lg:px-40">
+                <div className="rounded-lg bg-gradient-to-r from-cyan-400 via-orange-600 to-blue-600 p-2 drop-shadow-[0_45px_15px_rgba(0,0,0,0.5)]">
+                    <div className="bg-white flex lg:flex-row flex-col justify-center sm:gap-0 gap-5 py-10 sm:py-28 sm:pb-52">
+                        
                         <div className="flex flex-col items-center">
                             <img src="/iso27001.png" alt="Certification Image" className="w-60 h-auto" />
                             <div className="px-20">
@@ -21,6 +22,7 @@ export function Certifications() {
                                 </p>
                             </div>
                         </div>
+
                         <div className="flex flex-col items-center">
                             <img src="/visa_img.png" alt="Certification Image" className="w-72 h-auto" />
                             <div className="px-32">
@@ -38,6 +40,7 @@ export function Certifications() {
                                 </p>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
