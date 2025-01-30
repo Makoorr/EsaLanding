@@ -13,7 +13,7 @@ export function PercentageIndicator(props: Props) {
   return (
     <div className="flex justify-center gap-6 py-10">
       <div className="percentage-circle relative">
-        <svg width="180" height="180" viewBox="0 0 120 120">
+        <svg width="250" height="250" viewBox="0 0 120 120">
           <motion.circle
             cx="60" cy="60" r={radius}
             stroke="#8b5cf6"
@@ -42,15 +42,15 @@ export function PercentageIndicator(props: Props) {
             fill="none"
           />
         </svg>
-          <div className="text-center -translate-y-[7rem]">
-            <span className={`text-4xl font-semibold ${percentageValue === props.percentage ? "text-cyan-500" : "text-violet-500"}`}>
+          <div className="text-center -translate-y-40">
+            <span className={`text-6xl font-semibold ${percentageValue === props.percentage ? "text-cyan-500" : "text-violet-500"}`}>
               {percentageValue}%
             </span>
           </div>
       </div>
-      <div className="flex flex-col gap-2 pt-8 w-[34rem]">
+      <div className="flex flex-col gap-2 pt-8 w-[50rem]">
         <motion.p
-          className={`font-semibold text-2xl ${percentageValue === props.percentage ? "text-cyan-500" : "text-violet-500"}`}
+          className={`font-semibold text-4xl ${percentageValue === props.percentage ? "text-cyan-500" : "text-violet-500"}`}
         >
           {(percentageValue == props.percentage) ? props.text1 : props.text2}
         </motion.p>
