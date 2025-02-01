@@ -7,7 +7,7 @@ export function ProfileType() {
           <h1 className="text-3xl font-bold mb-6">
             (H2) Les types de <span className="text-orange-500">profils</span>
           </h1>
-          <p className="text-lg leading-5">
+          <p className="pr-10 leading-5">
             EsaLink vous propose l'expertise de consultants hautement qualifiés dans des domaines à fortes compétences spécifiques, rares et recherchées sur le marché. Nos équipes sont spécialisées dans quatre domaines clés, chacun offrant un accompagnement adapté pour répondre précisément à vos besoins :
           </p>
         </div>

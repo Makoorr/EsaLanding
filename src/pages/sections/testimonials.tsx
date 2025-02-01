@@ -17,19 +17,13 @@ export function Testimonials() {
         style={{ overflow: "visible" }}
       >
         {new Array(10).fill(0).map((_, idx) => (
-          <SwiperSlide key={idx}>
-            <div className="flex justify-center">
+          <SwiperSlide key={idx} className="swiper-slide">
+            <div className="flex justify-center transform transition-transform duration-300">
               <Card
-                name="John Doe"
-                role="CEO"
+                name="NOM Prénom"
+                role="Intitulé du poste + Entreprise"
                 feedback={`
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. excepteur sint occaecat cupidatat non proident,
-
+                  e Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
                 `}
                 image="https://via.placeholder.com/150"
               />
