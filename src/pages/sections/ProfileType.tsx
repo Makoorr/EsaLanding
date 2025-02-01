@@ -57,9 +57,9 @@ function Chip(props: ChipProps) {
     "bg-[#5bb6db]/50 sm:w-56 sm:-translate-x-2", // Supply chain
     "bg-[#00b7ff]/50 sm:w-60 sm:-translate-x-2", // Distribution
     "bg-[#4b39b5]/50 text-center sm:pr-5 sm:-translate-x-2", // SAP
-    "bg-[#ff914d]/50 text-center sm:ml-1 sm:w-40", // SAP MM
-    "from-[#8c52ff]/50 to-[#5ce1e6]/50 text-center sm:ml-1.5 sm:w-60", // SAP S/4HANA
-    "bg-[#4b39b5]/50 text-center sm:ml-10 pr-5", // SAP SD
+    "bg-[#ff914d]/50 text-center sm:ml-1 sm:w-40 sm:-translate-x-0", // SAP MM
+    "from-[#8c52ff]/50 to-[#5ce1e6]/50 text-center sm:ml-1.5 sm:w-60 sm:-translate-x-0", // SAP S/4HANA
+    "bg-[#4b39b5]/50 text-center sm:ml-10 pr-5 sm:-translate-x-0", // SAP SD
     "from-[#8c52ff]/50 to-[#5ce1e6]/50 text-center sm:w-52 sm:-translate-x-2", // SAP ERP
     "bg-[#00b7ff]/50 sm:w-48 sm:-translate-x-2", // Salesforce
   ];
@@ -83,3 +83,5 @@ type ChipProps = {
   idx: number;
   title: string;
 };
+
+export default ProfileType;
