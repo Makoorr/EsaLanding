@@ -7,12 +7,12 @@ body {
 }
 
 .swiper-button-prev {
-  @apply !right-[55%] !left-[unset] -translate-x-[12rem] block p-6 after:scale-75
+  @apply !right-[55%] !left-[unset] -translate-x-[6rem] sm:-translate-x-[8rem] 2xl:-translate-x-[12rem] block p-6 after:scale-75
   bg-sky-400 !text-white rounded-full m-10 !w-[var(--swiper-navigation-size)];
 }
 
 .swiper-button-next {
-    @apply !left-[55%] !right-[unset] translate-x-[12rem] block p-6 after:scale-75
+    @apply !left-[55%] !right-[unset] translate-x-[6rem] sm:translate-x-[8rem] 2xl:translate-x-[12rem] block p-6 after:scale-75
     bg-sky-400 !text-white rounded-full m-10 !w-[var(--swiper-navigation-size)];
 }
 

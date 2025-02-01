@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -6,14 +7,32 @@ import { Navigation } from "swiper/modules";
 import { Card } from "../../components/Card";
 
 export function Testimonials() {
+  const [slidesPerView, setSlidesPerView] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        setSlidesPerView(1);
+      } else {
+        setSlidesPerView(3);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="overflow-hidden my-10 py-20 bg-gradient-to-r from-purple-200 via-blue-100 to-sky-100">
       <Swiper
         spaceBetween={0}
-        slidesPerView={3}
+        slidesPerView={slidesPerView}
         modules={[Navigation]}
         navigation
-        style={{ overflow: "visible", scale: 0.75 }}
+        style={{ overflow: "visible" }}
+        className="xl:scale-75"
       >
         {new Array(10).fill(0).map((_, idx) => (
           <SwiperSlide key={idx}>
