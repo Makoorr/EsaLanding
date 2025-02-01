@@ -8,7 +8,7 @@ export function ProfileType() {
             (H2) Les types de <span className="text-orange-500">profils</span>
           </h1>
           <p className="pr-10 leading-5">
-            EsaLink vous propose l'expertise de consultants hautement qualifiés dans des domaines à fortes compétences spécifiques, rares et recherchées sur le marché. Nos équipes sont spécialisées dans quatre domaines clés, chacun offrant un accompagnement adapté pour répondre précisément à vos besoins :
+            EsaLink vous propose l&apos;expertise de consultants hautement qualifiés dans des domaines à fortes compétences spécifiques, rares et recherchées sur le marché. Nos équipes sont spécialisées dans quatre domaines clés, chacun offrant un accompagnement adapté pour répondre précisément à vos besoins :
           </p>
         </div>
         <div className="flex py-4">
@@ -31,7 +31,7 @@ export function ProfileType() {
               role="Expert - PMO - Manager"
               description={
                 <p>
-                  Expert chargé d'<strong>optimiser la gestion des flux logistiques</strong> d'une entreprise, depuis l'approvisionnement en matières premières jusqu'à la livraison des produits finis. Son rôle consiste à analyser les processus existants, identifier des pistes d'amélioration et mettre en œuvre des solutions pour réduire les coûts, améliorer la qualité et augmenter l'efficacité. Grâce à son expertise, il aide les entreprises à mieux gérer leurs ressources, à anticiper les risques et à répondre aux fluctuations du marché.
+                  Expert chargé d&apos;<strong>optimiser la gestion des flux logistiques</strong> d&apos;une entreprise, depuis l&apos;approvisionnement en matières premières jusqu&apos;à la livraison des produits finis. Son rôle consiste à analyser les processus existants, identifier des pistes d&apos;amélioration et mettre en œuvre des solutions pour réduire les coûts, améliorer la qualité et augmenter l&apos;efficacité. Grâce à son expertise, il aide les entreprises à mieux gérer leurs ressources, à anticiper les risques et à répondre aux fluctuations du marché.
                 </p>
               }
             />
@@ -40,9 +40,9 @@ export function ProfileType() {
               role="ERP - MM - FICO"
               description={
                 <p>
-                  Expert spécialisé dans la mise en œuvre et l'<strong>optimisation des modules du logiciel SAP</strong>, un progiciel de gestion intégré (ERP) utilisé par de nombreuses entreprises pour centraliser leur processus.<br></br> 
-                  Il analyse les besoins de l'entreprise, configure les modules SAP et forme les équipes à leur utilisation.<br></br> 
-                  Grâce à ses compétences, le consultant SAP permet aux entreprises d'améliorer leur efficacité opérationnelle, de mieux gérer leurs ressources et de faciliter la prise de décision grâce à des données fiables et centralisées.
+                  Expert spécialisé dans la mise en œuvre et l&apos;<strong>optimisation des modules du logiciel SAP</strong>, un progiciel de gestion intégré (ERP) utilisé par de nombreuses entreprises pour centraliser leur processus.<br></br> 
+                  Il analyse les besoins de l&apos;entreprise, configure les modules SAP et forme les équipes à leur utilisation.<br></br> 
+                  Grâce à ses compétences, le consultant SAP permet aux entreprises d&apos;améliorer leur efficacité opérationnelle, de mieux gérer leurs ressources et de faciliter la prise de décision grâce à des données fiables et centralisées.
                 </p>
               }
             />
