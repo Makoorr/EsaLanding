@@ -1,6 +1,6 @@
 export function Immatriculation() {
     return (
-        <div className="relative py-10 my-4 px-60">
+        <div className="relative py-4 my-4 px-48">
             <div className="absolute right-0 -translate-y-40 -translate-x-24">
                 <img
                     src="/immatricule_pdp.png"
@@ -21,13 +21,13 @@ export function Immatriculation() {
                     />
                 </div>
 
-                <div className="col-span-3 pl-16 py-4 mb-4 w-full">
+                <div className="col-span-3 pl-8 py-4 mb-4 w-full">
                     <h1 className="text-[45px] leading-[3rem] font-semibold mb-8">
                         (H2) La certification, <span className="text-orange-500">Plateforme de Dématérialisation Partenaire (PDP)</span>
                     </h1>
 
                     <div className="flex gap-4">
-                        <span className="pl-4 text-lg text-gray-500 text-justify leading-5">    
+                        <span className="pl-8 text-lg text-gray-500 text-justify leading-5">    
                             <p className="mb-8">EsaLink vous annonce l'immatriculation officielle de sa Solution <span className="text-black font-medium underline">HUBTIMIZE E-Invoicing</span> en tant que Plateforme de Dématérialisation Partenaire (PDP). Une étape cruciale qui témoigne de notre engagement à offrir des solutions de facturation électronique sécurisées, conformes aux réformes concernant la dématérialisation fiscale.</p>
                             <p>La certification PDP est bien plus qu'une simple certification. Elle est un gage de confiance pour toutes les entreprises qui cherchent à optimiser et sécuriser leurs processus de facturation électronique. En tant que Plateforme de Dématérialisation Partenaire,</p>
                         </span>

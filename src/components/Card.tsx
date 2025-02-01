@@ -1,6 +1,6 @@
 export function Card(props: CardProps) {
     return (
-      <div className="w-96">
+      <div className="scale-125 w-[26rem]">
         <div className="text-center border-4 relative"
           style={{
             borderImage: "linear-gradient(90deg, #8c52ff, #5ce1e6) 1",
