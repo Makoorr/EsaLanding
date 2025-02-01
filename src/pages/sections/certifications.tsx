@@ -1,7 +1,7 @@
 export function Certifications() {
     return (
         <div className="relative py-16">
-            <div className="lg:px-60">
+            <div className="xl:px-60">
                 <div className="rounded-lg bg-gradient-to-r from-cyan-400 via-orange-600 to-blue-600 p-2 drop-shadow-[0_45px_15px_rgba(0,0,0,0.5)]">
                     <div className="px-16 bg-white flex lg:flex-row flex-col justify-center sm:gap-0 gap-5 py-10 sm:py-28 sm:pb-40">
                         
@@ -47,13 +47,13 @@ export function Certifications() {
                 </div>
             </div>
 
-            <div className="px-44 overflow-hidden absolute transition-transform transform -translate-y-[38rem]">
+            <div className="hidden xl:block px-44 overflow-hidden absolute transition-transform transform -translate-y-[38rem]">
                 <img 
                     src="/wings_bg.png" 
                     alt="New Image" 
                     className="w-full h-auto object-cover"
                     style={{
-                        clipPath: "polygon(0px 0px, 100% 0%, 100% 100%, 95.85% 98.4%, 95.9% 55%, 4.15% 55.5%, 4.3% 100.7%, 0% 100%)"
+                        clipPath: "polygon(0px 0px, 100% 0%, 100% 100%, 95.6% 98.75%, 95.6% 54.55%, 4.6% 55.55%, 4.65% 100.5%, 0% 100%)"
                     }}
                 />
             </div>
