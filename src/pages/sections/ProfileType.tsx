@@ -12,7 +12,7 @@ export function ProfileType() {
           </p>
         </div>
         <div className="flex py-4">
-          <div className="flex flex-col space-y-3 w-1/4 pr-3">
+          <div className="flex flex-col -translate-y-32 sm:-translate-y-32 absolute sm:relative pb-4 sm:pb-0 space-y-3 sm:w-1/4 pr-3">
             <Chip idx={1} title="Supply Chain" />
             <Chip idx={2} title="Distribution" />
             <Chip idx={3} title="SAP" />
@@ -54,14 +54,14 @@ export function ProfileType() {
   
 function Chip(props: ChipProps) {
   const colors = [
-    "bg-[#5bb6db]/50 sm:w-56 w-36 -translate-x-2", // Supply chain
-    "bg-[#00b7ff]/50 sm:w-60 w-28 -translate-x-2", // Distribution
-    "bg-[#4b39b5]/50 text-center pr-5 -translate-x-2", // SAP
-    "bg-[#ff914d]/50 text-center ml-1 sm:w-40 w-24", // SAP MM
-    "from-[#8c52ff]/50 to-[#5ce1e6]/50 text-center ml-1.5 sm:w-60 w-28", // SAP S/4HANA
-    "bg-[#4b39b5]/50 text-center ml-10 pr-5", // SAP SD
-    "from-[#8c52ff]/50 to-[#5ce1e6]/50 text-center sm:w-52 w-28 -translate-x-2", // SAP ERP
-    "bg-[#00b7ff]/50 sm:w-48 w-28 -translate-x-2", // Salesforce
+    "bg-[#5bb6db]/50 sm:w-56 sm:-translate-x-2", // Supply chain
+    "bg-[#00b7ff]/50 sm:w-60 sm:-translate-x-2", // Distribution
+    "bg-[#4b39b5]/50 text-center sm:pr-5 sm:-translate-x-2", // SAP
+    "bg-[#ff914d]/50 text-center sm:ml-1 sm:w-40", // SAP MM
+    "from-[#8c52ff]/50 to-[#5ce1e6]/50 text-center sm:ml-1.5 sm:w-60", // SAP S/4HANA
+    "bg-[#4b39b5]/50 text-center sm:ml-10 pr-5", // SAP SD
+    "from-[#8c52ff]/50 to-[#5ce1e6]/50 text-center sm:w-52 sm:-translate-x-2", // SAP ERP
+    "bg-[#00b7ff]/50 sm:w-48 sm:-translate-x-2", // Salesforce
   ];
   const color = colors[(props.idx - 1) % colors.length];
 
@@ -69,7 +69,7 @@ function Chip(props: ChipProps) {
     <div className="overflow-hidden">
       <span
         className={`
-          hover:translate-x-8 inline-block duration-300 transform cursor-pointer
+          hover:translate-x-8 -translate-x-[85%] inline-block duration-300 transform cursor-pointer
           rounded-xl bg-gradient-to-r px-4 font-semibold py-1 sm:text-2xl text-lg text-white ${color}
         `}
       >
