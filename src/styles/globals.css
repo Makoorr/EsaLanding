@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-button-prev {
+  @apply !right-[50%] !left-[unset] -translate-x-[12rem] block
+  bg-sky-400 !text-white rounded-full m-10 !w-[var(--swiper-navigation-size)]
+  after:scale-50;
+}
+
+.swiper-button-next {
+    @apply !left-[50%] !right-[unset] translate-x-[12rem] block
+    after:scale-50
+    bg-sky-400 !text-white rounded-full m-10 !w-[var(--swiper-navigation-size)];
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

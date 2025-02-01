@@ -4,24 +4,22 @@ export function ProfileType() {
     return (
       <div>
         <div className="sm:px-20 px-5 py-5 mb-4 w-full">
-          <h1 className="text-xl font-black mb-4">
+          <h1 className="text-3xl font-bold mb-8">
             (H2) Les types de <span className="text-orange-500">profils</span>
           </h1>
-          <h2 className="text-xs">
-            Je propose des offres d'emploi pour les profils suivants. Si vous êtes
-            intéressé, veuillez postuler. il est possible que vous soyez contacté
-            pour un entretien. lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua.
+          <h2 className="text-lg">
+          EsaLink vous propose l’expertise de consultants hautement qualifiés dans des domaines à fortes compétences spécifiques, rares et recherchées sur le marché. Nos équipes sont spécialisées dans quatre domaines clés, chacun offrant un accompagnement adapté pour répondre précisément à vos besoins :
           </h2>
         </div>
         <div className="flex py-4">
-          <div className="flex flex-col space-y-3 w-1/4 pr-6">
+          <div className="flex flex-col space-y-3 w-1/4 pr-3">
             <Chip idx={1} title="Supply Chain" />
             <Chip idx={2} title="Distribution" />
             <Chip idx={3} title="SAP" />
             <Chip idx={4} title="SAP MM" />
             <Chip idx={5} title="SAP S/4HANA" />
+            <br></br>
+            <br></br>
             <Chip idx={6} title="SAP SD" />
             <Chip idx={7} title="SAP ERP" />
             <Chip idx={8} title="Salesforce" />
@@ -72,11 +70,14 @@ export function ProfileType() {
   
 function Chip(props: ChipProps) {
   const colors = [
-    "from-blue-400 to-cyan-400 sm:w-48 w-36", // Supply chain
-    "from-blue-300 to-cyan-200 sm:w-52 w-28", // Distribution
-    "from-purple-400 to-violet-400 pr-5", // SAP
-    "from-orange-300 to-yellow-300 sm:w-28 w-24", // SAP MM
-    "from-violet-300 to-cyan-300 sm:w-52 w-28", // SAP S/4HANA
+    "bg-[#5bb6db]/50 sm:w-56 w-36", // Supply chain
+    "bg-[#00b7ff]/50 sm:w-60 w-28", // Distribution
+    "bg-[#4b39b5]/50 text-center pr-5", // SAP
+    "bg-[#ff914d]/50 text-center ml-1 sm:w-40 w-24", // SAP MM
+    "from-[#8c52ff]/50 to-[#5ce1e6]/50 text-center ml-1.5 sm:w-52 w-28", // SAP S/4HANA
+    "bg-[#4b39b5]/50 text-center ml-10 pr-5", // SAP SD
+    "from-[#8c52ff]/50 to-[#5ce1e6]/50 text-center sm:w-52 w-28", // SAP ERP
+    "bg-[#00b7ff]/50 sm:w-48 w-28", // Salesforce
   ];
   const color = colors[(props.idx - 1) % colors.length];
 
@@ -85,7 +86,7 @@ function Chip(props: ChipProps) {
       <span
         className={`
           hover:translate-x-8 inline-block duration-300 transform cursor-pointer
-          rounded-lg bg-gradient-to-r px-4 font-black py-2 text-xs text-white ${color}
+          rounded-xl bg-gradient-to-r px-4 font-semibold py-2 sm:text-2xl text-lg text-white ${color}
         `}
       >
         {props.title}

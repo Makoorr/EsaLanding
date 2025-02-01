@@ -45,11 +45,14 @@ export function Certifications() {
                 </div>
             </div>
 
-            <div className="px-12 overflow-hidden absolute transition-transform transform -translate-y-[38rem]">
+            <div className="px-24 overflow-hidden absolute transition-transform transform -translate-y-[38rem]">
                 <img 
                     src="/wings_bg.png" 
                     alt="New Image" 
-                    className="w-full h-auto object-cover" 
+                    className="w-full h-auto object-cover"
+                    style={{
+                        clipPath: "polygon(0px 0px, 100% 0%, 100% 100%, 95.85% 98.4%, 95.9% 55%, 4.15% 55.5%, 4.3% 100.7%, 0% 100%)"
+                    }}
                 />
             </div>
         </div>
