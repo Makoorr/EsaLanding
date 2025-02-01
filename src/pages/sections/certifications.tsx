@@ -47,7 +47,7 @@ export function Certifications() {
                 </div>
             </div>
 
-            <div className="hidden xl:block px-44 overflow-hidden absolute transition-transform transform -translate-y-[38rem]">
+            <div className="hidden xl:block min-[1921px]:hidden px-48 2xl:px-44 overflow-hidden absolute transition-transform transform -translate-y-[38rem]">
                 <img 
                     src="/wings_bg.png" 
                     alt="New Image" 
