@@ -10,3 +10,5 @@ export function Satisfaction() {
         </div>
     )
 }
+
+export default Satisfaction;

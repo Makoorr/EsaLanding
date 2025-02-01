@@ -42,3 +42,5 @@ export function Immatriculation() {
         </div>
     )
 }
+
+export default Immatriculation;
