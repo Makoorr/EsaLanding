@@ -12,7 +12,7 @@ export function ProfileType() {
           </p>
         </div>
         <div className="flex py-4">
-          <div className="flex flex-col -translate-y-32 sm:-translate-y-32 absolute sm:relative pb-4 sm:pb-0 space-y-3 sm:w-1/4 pr-3">
+          <div className="flex flex-col -translate-y-32 sm:-translate-y-0 absolute sm:relative pb-4 sm:pb-0 space-y-3 sm:w-1/4 pr-3">
             <Chip idx={1} title="Supply Chain" />
             <Chip idx={2} title="Distribution" />
             <Chip idx={3} title="SAP" />
@@ -25,7 +25,7 @@ export function ProfileType() {
             <Chip idx={8} title="Salesforce" />
           </div>
 
-          <div className="flex-1 sm:flex-row flex-col h-fixed flex gap-10 items-start">
+          <div className="flex-1 lg:flex-row flex-col h-fixed flex gap-10 items-start">
             <Job
               title="Consultant Supply Chain"
               role="Expert - PMO - Manager"

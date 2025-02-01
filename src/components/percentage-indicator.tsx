@@ -11,7 +11,7 @@ export function PercentageIndicator(props: Props) {
   const strokeDashoffset = circumference * ((100 - props.percentage) / 100);
 
   return (
-    <div className="flex justify-center gap-6 py-10">
+    <div className="flex justify-center gap-6 sm:py-10">
       <div className="percentage-circle relative">
         <svg width="250" height="250" viewBox="0 0 120 120">
           <motion.circle
