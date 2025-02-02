@@ -21,7 +21,7 @@ export function Immatriculation() {
                     />
                 </div>
 
-                <div className="col-span-4 sm:col-span-3 -translate-y-44 sm:-translate-y-0 pl-5 sm:pt-40 lg:pt-0 lg:pl-20 min-[1820px]:pl-8 py-4 mb-4 pr-4 sm:pr-16 min-[1820px]:pr-0 w-full">
+                <div className="col-span-4 sm:col-span-3 -translate-y-44 sm:-translate-y-0 pl-5 sm:pt-40 lg:pt-2 lg:pl-20 min-[1820px]:pl-8 py-4 mb-4 pr-4 sm:pr-16 min-[1820px]:pr-0 w-full">
                     <h1 className="text-[25px] min-[1820px]:text-[45px] leading-[3rem] font-semibold mb-8 sm:pl-20 lg:pl-0">
                         (H2) La certification, <span className="text-orange-500">Plateforme de Dématérialisation Partenaire (PDP)</span>
                     </h1>

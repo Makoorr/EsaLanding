@@ -25,7 +25,7 @@ export function ProfileType() {
             <Chip idx={8} title="Salesforce" />
           </div>
 
-          <div className="flex-1 lg:flex-row flex-col h-fixed flex gap-10 items-center">
+          <div className="flex-1 xl:flex-row flex-col h-fixed flex gap-10 items-center">
             <Job
               title="Consultant Supply Chain"
               role="Expert - PMO - Manager"
