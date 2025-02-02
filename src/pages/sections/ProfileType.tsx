@@ -3,16 +3,16 @@ import { Job } from "../../components/Job";
 export function ProfileType() {
     return (
       <div>
-        <div className="sm:px-40 px-5 py-5 mb-4 w-full">
+        <div className="lg:px-40 px-5 py-5 mb-4 w-full">
           <h1 className="text-3xl font-bold mb-6">
             (H2) Les types de <span className="text-orange-500">profils</span>
           </h1>
-          <p className="pr-10 leading-5">
+          <p className="sm:pr-10 leading-5">
             EsaLink vous propose l&apos;expertise de consultants hautement qualifiés dans des domaines à fortes compétences spécifiques, rares et recherchées sur le marché. Nos équipes sont spécialisées dans quatre domaines clés, chacun offrant un accompagnement adapté pour répondre précisément à vos besoins :
           </p>
         </div>
         <div className="flex py-4">
-          <div className="flex flex-col -translate-y-32 sm:-translate-y-0 absolute sm:relative pb-4 sm:pb-0 space-y-3 sm:w-1/4 pr-3">
+          <div className="flex flex-col absolute sm:relative pb-4 sm:pb-0 space-y-3 lg:w-1/4 pr-3">
             <Chip idx={1} title="Supply Chain" />
             <Chip idx={2} title="Distribution" />
             <Chip idx={3} title="SAP" />
@@ -25,7 +25,7 @@ export function ProfileType() {
             <Chip idx={8} title="Salesforce" />
           </div>
 
-          <div className="flex-1 lg:flex-row flex-col h-fixed flex gap-10 items-start">
+          <div className="flex-1 lg:flex-row flex-col h-fixed flex gap-10 items-center">
             <Job
               title="Consultant Supply Chain"
               role="Expert - PMO - Manager"

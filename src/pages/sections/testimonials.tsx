@@ -37,7 +37,7 @@ export function Testimonials() {
         {new Array(10).fill(0).map((_, idx) => (
           <SwiperSlide key={idx}>
             {({ isNext }) => (
-              <div className={`flex justify-center transform transition-transform duration-300 ${isNext ? "scale-100" : "scale-75"}`}>
+              <div className={`flex justify-center transform transition-transform duration-300 ${isNext ? "lg:scale-100" : "lg:scale-75"}`}>
                 <Card
                   name="NOM Prénom"
                   role="Intitulé du poste + Entreprise"
