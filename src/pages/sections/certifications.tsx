@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 export function Certifications() {
+    const [showText1, setShowText1] = useState<boolean>(false)
+    const [showText2, setShowText2] = useState<boolean>(false)
+
     return (
         <div className="relative py-16">
             <div className="xl:px-60">
@@ -10,13 +15,13 @@ export function Certifications() {
                             <div className="sm:px-2">
                                 <div className="flex">
                                     <h1 className="text-2xl font-bold">EsaLink est <span className="text-orange-400">certifié ISO/IEC 27001 </span>sur<br></br> ses solutions et services d&apos;intégration B2B</h1>
-                                    <div className="mt-2">
+                                    <div className={ (showText1 ? "" : "rotate-[-180deg] ") + "mt-2 cursor-pointer"} onClick={() => setShowText1(!showText1)}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-[#cbc9cf]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="butt" strokeLinejoin="miter" strokeWidth={5} d="M19 9l-7 7-7-7" />
                                         </svg>
                                     </div>
                                 </div>
-                                <p className="mt-4 pr-16 text-lg text-gray-600 leading-5">
+                                <p className={(showText1 ? "" : "hidden ") + "mt-4 pr-16 text-lg text-gray-600 leading-5"}>
                                     La norme ISO/IEC 27001 est un standard mondial pour les Systèmes de gestion de la sécurité de l&apos;information (SMSI), définissant les critères pour organiser, implémenter, maintenir et améliorer continuellement la sécurité de l&apos;information.<br></br>
                                     Garanti une gestion sécurisée des données. <br></br>
                                     Couvre l&apos;ensemble des opérations, services et solutions, assurant que chaque processus et service respecte les normes les plus strictes de sécurité et de gestion des ...
@@ -29,13 +34,13 @@ export function Certifications() {
                             <div className="sm:px-12">
                                 <div className="flex">
                                     <h1 className="text-2xl font-bold">La solution HUBTIMIZE E-Invoicing <span className="text-orange-400"> qualifiée SecNumCloud</span></h1>
-                                    <div className="mt-2">
+                                    <div className={ (showText2 ? "" : "rotate-[-180deg] ") + "mt-2 cursor-pointer"} onClick={() => setShowText2(!showText2)}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-[#cbc9cf]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="butt" strokeLinejoin="miter" strokeWidth={5} d="M19 9l-7 7-7-7" />
                                         </svg>
                                     </div>
                                 </div>
-                                <p className="mt-4 text-lg text-gray-600 leading-5">
+                                <p className={(showText2 ? "" : "hidden ") + "mt-4 text-lg text-gray-600 leading-5"}>
                                     La qualification SecNumCloud, délivrée par l&apos;ANSSI, est un visa de sécurité attestant du plus haut niveau de qualité, de sécurité et de confiance pour les prestataires de services cloud. 
                                     Pour EsaLink, cela inclut des Data Centers en France et en Allemagne, assurant une protection robuste face aux cyberattaques et une conformité rigoureuse des processus.  
                                     Les exigences du référentiel garantissent la protection du service cloud vis-à-vis du droit extra européen, grâce à la combinaison de trois types de mesures fygfyergugrugr.
@@ -47,7 +52,7 @@ export function Certifications() {
                 </div>
             </div>
 
-            <div className="hidden xl:block min-[1921px]:hidden px-48 2xl:px-44 overflow-hidden absolute transition-transform transform -translate-y-[38rem]">
+            <div className="hidden xl:block min-[1921px]:hidden px-48 2xl:px-44 overflow-hidden absolute transition-transform transform -translate-y-[38rem] pointer-events-none">
                 <img 
                     src="/wings_bg.png" 
                     alt="New Image" 
