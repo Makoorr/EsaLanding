@@ -52,7 +52,7 @@ export function Certifications() {
                 </div>
             </div>
 
-            <div className="hidden xl:block min-[1921px]:hidden px-48 2xl:px-44 overflow-hidden absolute transition-transform transform -translate-y-[38rem] pointer-events-none">
+            <div className={"hidden xl:block min-[1921px]:hidden px-48 2xl:px-44 overflow-hidden absolute transition-transform duration-500 ease-in-out transform " + (showText1 || showText2 ? "-translate-y-[38rem]" : "-translate-y-[26rem]") + " pointer-events-none"}>
                 <img 
                     src="/wings_bg.png" 
                     alt="New Image" 
